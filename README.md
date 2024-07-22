@@ -1,6 +1,6 @@
 # HRRR Windy
 
-This is a userscript that clicks the "HRRR" button at the bottom of Windy.com, defaulting you to the 3km resolution HRRR forecast instead of the 9km resolution ECMWF forecast.
+This is a userscript that clicks the "HRRR" button at the bottom of [Windy.com](https://www.windy.com/), defaulting you to the 3km resolution HRRR forecast instead of the 9km resolution ECMWF forecast.
 
 Not affiliated with Windy.
 
