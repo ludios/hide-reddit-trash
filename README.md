@@ -1,6 +1,6 @@
 # Hide Reddit Trash
 
-This is a userscript that hides the links on the reddit homepage and on /r/{all,politics,videos}, without hiding anything on the comments page.
+This is a userscript that hides the links on the reddit homepage and on /r/{all,politics,videos}, without hiding anything on the comments pages.
 
 ## Install
 
