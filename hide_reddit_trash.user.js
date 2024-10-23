@@ -4,8 +4,9 @@
 // @author      ludios
 // @license     AGPL-3.0; https://www.gnu.org/licenses/agpl-3.0.en.html
 // @grant       none
-// @version     1.0.1
+// @version     1.0.2
 // @match       https://old.reddit.com/*
+// @match       https://old.reddit.com./*
 // @grant       GM_addStyle
 // @run-at      document-start
 // ==/UserScript==
@@ -15,9 +16,9 @@
 
 const loc = window.location.href;
 
-const TRASH_RE    = /^https:\/\/old\.reddit\.com\/r\/(all|politics|videos)[\/\+-]/;
-const COMMENTS_RE = /^https:\/\/old\.reddit\.com\/r\/[^\/]+\/comments\//;
-const HOMEPAGE_RE = /^https:\/\/old\.reddit\.com\/($|[\?&]|(new|rising|controversial|top)\/)/;
+const TRASH_RE    = /^https:\/\/old\.reddit\.com\.?\/r\/(all|politics|videos)[\/\+-]/;
+const COMMENTS_RE = /^https:\/\/old\.reddit\.com\.?\/r\/[^\/]+\/comments\//;
+const HOMEPAGE_RE = /^https:\/\/old\.reddit\.com\.?\/($|[\?&]|(new|rising|controversial|top)\/)/;
 
 if ((TRASH_RE.test(loc) && !COMMENTS_RE.test(loc)) || HOMEPAGE_RE.test(loc)) {
   GM_addStyle(`
